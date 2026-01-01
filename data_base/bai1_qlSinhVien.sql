@@ -15,3 +15,4 @@ create table teacher(
 select * from class;
 select * from teacher;
 
+
