@@ -29,4 +29,17 @@ create table order_detail(
     foreign key (order_id) references orders (id),
     foreign key (product_id) references product (id)
 );
- select * from orders
+
+ select * from customer;
+ select * from orders;
+ select * from product;
+ select * from order_detail;
+ 
+-- Hiển thị các thông tin  gồm oID, oDate, oPrice của tất cả các hóa đơn trong bảng Order
+select id, date, total_price
+from orders;
+-- Hiển thị danh sách các khách hàng đã mua hàng, và danh sách sản phẩm được mua bởi các khách
+
+-- Hiển thị tên những khách hàng không mua bất kỳ một sản phẩm nào
+
+-- Hiển thị mã hóa đơn, ngày bán và giá tiền của từng hóa đơn (giá một hóa đơn được tính bằng tổng giá bán của từng loại mặt hàng xuất hiện trong hóa đơn. Giá bán của từng loại được tính = odQTY*pPrice)
