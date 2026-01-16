@@ -39,6 +39,9 @@ create table order_detail(
 select id, date, total_price
 from orders;
 -- Hiển thị danh sách các khách hàng đã mua hàng, và danh sách sản phẩm được mua bởi các khách
+select c.name 
+from customer c
+join product p on
 
 -- Hiển thị tên những khách hàng không mua bất kỳ một sản phẩm nào
 
